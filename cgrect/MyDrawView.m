@@ -64,7 +64,14 @@
     // テキストを描画
     UIFont *font = [UIFont fontWithName:@"AvenirNext-Italic" size:20.0f];
     [[UIColor colorWithRed:.8f green:0 blue:0 alpha:1.0f] set];
-    [@"hogehoge" drawAtPoint:CGPointMake(50, 300) withAttributes:@{NSFontAttributeName:font}];
+    [@"click green square" drawAtPoint:CGPointMake(50, 300) withAttributes:@{NSFontAttributeName:font}];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    CGPoint pt = [[touches anyObject] locationInView:self];
+    if (CGRectContainsPoint(CGRectMake(50,50,50,50),pt)) {
+        NSLog(@"あたり");
+    }
 }
 
 @end
