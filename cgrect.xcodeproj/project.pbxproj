@@ -19,8 +19,6 @@
 		0468759319BF521B0060A683 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0468759219BF521B0060A683 /* XCTest.framework */; };
 		0468759419BF521B0060A683 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0468757319BF521A0060A683 /* Foundation.framework */; };
 		0468759519BF521B0060A683 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0468757719BF521A0060A683 /* UIKit.framework */; };
-		0468759D19BF521B0060A683 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0468759B19BF521B0060A683 /* InfoPlist.strings */; };
-		0468759F19BF521B0060A683 /* cgrectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468759E19BF521B0060A683 /* cgrectTests.m */; };
 		046875AA19BF53180060A683 /* MyDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046875A919BF53180060A683 /* MyDrawView.m */; };
 /* End PBXBuildFile section */
 
@@ -51,9 +49,6 @@
 		0468758B19BF521B0060A683 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0468759119BF521B0060A683 /* cgrectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cgrectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0468759219BF521B0060A683 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		0468759A19BF521B0060A683 /* cgrectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cgrectTests-Info.plist"; sourceTree = "<group>"; };
-		0468759C19BF521B0060A683 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0468759E19BF521B0060A683 /* cgrectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cgrectTests.m; sourceTree = "<group>"; };
 		046875A819BF53180060A683 /* MyDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDrawView.h; sourceTree = "<group>"; };
 		046875A919BF53180060A683 /* MyDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDrawView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				0468757919BF521A0060A683 /* cgrect */,
-				0468759819BF521B0060A683 /* cgrectTests */,
 				0468757219BF521A0060A683 /* Frameworks */,
 				0468757119BF521A0060A683 /* Products */,
 			);
@@ -135,24 +129,6 @@
 				0468757C19BF521A0060A683 /* InfoPlist.strings */,
 				0468757F19BF521A0060A683 /* main.m */,
 				0468758119BF521A0060A683 /* cgrect-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0468759819BF521B0060A683 /* cgrectTests */ = {
-			isa = PBXGroup;
-			children = (
-				0468759E19BF521B0060A683 /* cgrectTests.m */,
-				0468759919BF521B0060A683 /* Supporting Files */,
-			);
-			path = cgrectTests;
-			sourceTree = "<group>";
-		};
-		0468759919BF521B0060A683 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0468759A19BF521B0060A683 /* cgrectTests-Info.plist */,
-				0468759B19BF521B0060A683 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -243,7 +219,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0468759D19BF521B0060A683 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +240,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0468759F19BF521B0060A683 /* cgrectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,14 +268,6 @@
 				0468758619BF521B0060A683 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0468759B19BF521B0060A683 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0468759C19BF521B0060A683 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -462,6 +428,7 @@
 				046875A419BF521B0060A683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		046875A519BF521B0060A683 /* Build configuration list for PBXNativeTarget "cgrectTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +437,7 @@
 				046875A719BF521B0060A683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
