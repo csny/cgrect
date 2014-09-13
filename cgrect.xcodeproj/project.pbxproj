@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04103B3E19C44F8D007E5A8F /* AnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04103B3D19C44F8D007E5A8F /* AnimationView.m */; };
 		0468757419BF521A0060A683 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0468757319BF521A0060A683 /* Foundation.framework */; };
 		0468757619BF521A0060A683 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0468757519BF521A0060A683 /* CoreGraphics.framework */; };
 		0468757819BF521A0060A683 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0468757719BF521A0060A683 /* UIKit.framework */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04103B3C19C44F8D007E5A8F /* AnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationView.h; sourceTree = "<group>"; };
+		04103B3D19C44F8D007E5A8F /* AnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationView.m; sourceTree = "<group>"; };
 		0468757019BF521A0060A683 /* cgrect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cgrect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0468757319BF521A0060A683 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0468757519BF521A0060A683 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -116,6 +119,8 @@
 				0468758919BF521B0060A683 /* ViewController.m */,
 				046875A819BF53180060A683 /* MyDrawView.h */,
 				046875A919BF53180060A683 /* MyDrawView.m */,
+				04103B3C19C44F8D007E5A8F /* AnimationView.h */,
+				04103B3D19C44F8D007E5A8F /* AnimationView.m */,
 				0468758B19BF521B0060A683 /* Images.xcassets */,
 				0468757A19BF521A0060A683 /* Supporting Files */,
 			);
@@ -233,6 +238,7 @@
 				0468758419BF521A0060A683 /* AppDelegate.m in Sources */,
 				046875AA19BF53180060A683 /* MyDrawView.m in Sources */,
 				0468758019BF521A0060A683 /* main.m in Sources */,
+				04103B3E19C44F8D007E5A8F /* AnimationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

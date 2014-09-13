@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MyDrawView.h"
+#import "AnimationView.h"
 
 @interface ViewController : UIViewController
 

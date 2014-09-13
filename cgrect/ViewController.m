@@ -23,6 +23,11 @@
     MyDrawView *drawView = [[MyDrawView alloc] initWithFrame:self.view.bounds];
     // サブビューの追加
     [self.view addSubview:drawView];
+    AnimationView *animeView = [[AnimationView alloc] initWithFrame:self.view.bounds];
+    // サブビューの追加
+    [self.view addSubview:animeView];
+    // animeViewを最前面へ
+    [self.view bringSubviewToFront:animeView];
 }
 
 - (void)didReceiveMemoryWarning
