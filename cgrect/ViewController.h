@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 #import "MyDrawView.h"
 #import "AnimationView.h"
+//#import "AnimationView2.h"
 
 @interface ViewController : UIViewController
+
+@property CALayer *layer;
 
 @end

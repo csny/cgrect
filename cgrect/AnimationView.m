@@ -35,6 +35,21 @@ BOOL isGreen[7][10]; // 方眼のタッチ有無を格納する配列
     // 色を定義
     CGFloat white[4] = {0.0f, 0.0f, 0.0f, 0.0f}; // 透明
     CGFloat green[4] = {0.0f, 1.0f, 0.0f, 0.7f}; // 半透明
+    CGFloat cyan[4] = {0.5f, 0.8f, 1.0f, 1.0f};
+    
+    // グリッドを描画
+    CGContextSetStrokeColor(context, cyan);
+    CGContextBeginPath(context);
+    CGContextSetLineWidth(context, .5f);
+    for (int y = 50; y < self.bounds.size.height; y+=50) {
+        CGContextMoveToPoint(context, 0, y);
+        CGContextAddLineToPoint(context, self.bounds.size.width, y);
+    }
+    for (int x = 50; x < self.bounds.size.width; x+=50) {
+        CGContextMoveToPoint(context, x, 0);
+        CGContextAddLineToPoint(context, x, self.bounds.size.height);
+    }
+    CGContextStrokePath(context);
     
     // フラグに応じて矩形を描画、イベントで一部再読み込みされる
     for(int i=0;i<7;i++){
@@ -49,6 +64,11 @@ BOOL isGreen[7][10]; // 方眼のタッチ有無を格納する配列
             
         }
     }
+    
+    // テキストを描画
+    UIFont *font = [UIFont fontWithName:@"AvenirNext-Italic" size:20.0f];
+    [[UIColor colorWithRed:.8f green:0 blue:0 alpha:1.0f] set];
+    [@"touch any square" drawAtPoint:CGPointMake(50, 300) withAttributes:@{NSFontAttributeName:font}];
 }
 
 // タッチイベント
